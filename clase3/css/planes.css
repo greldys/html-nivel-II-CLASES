@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.planes__contenedor{
+	width: 30%;
+	height: 500px;
+	border: 1px solid gray;
+	margin: 100px auto;
+}
+.planes__cabecera {
+	height: 100px;
+	border-bottom: 1px solid gray;
+	text-align: center;
+}
+
+.planes__cabecera > h3{
+text-transform: uppercase;
+color: purple;
+letter-spacing: 2px;
+}

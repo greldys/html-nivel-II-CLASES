@@ -1,0 +1,73 @@
+
+/*selector hijo directo
+.contenedor > p{
+	color: yellow;
+}
+
+//hermano adyacente
+.contenedor p + p{
+	color: yellow;
+}
+//hermano general
+.contenedor p ~ p{ //afecta a todas las P que son hernmanas sin tomar en cuenta la interrupcion
+	color: yellow; //alt126=~
+}
+*/
+.contenedor p ~ p{
+	color: yellow;
+}
+li {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+}
+li a{
+	text-decoration: none;
+}
+li:hover{
+	background:  pink;
+}
+li:link{
+background:  orange;
+}
+li:visited{
+background:  green;
+}
+li a:active{
+	background:  yellow;
+}
+input:focus{
+background: yellow;
+}
+input:checked{
+	display: none;
+}
+/* selector atributo presente*/
+
+a[class]{
+	background: gray;
+}
+
+/* selector atributo igual*/
+
+a[class="diferente"]{
+	background: yellow;
+}
+
+/* selector atributo contenido*/
+
+a[href*=".com"]{
+	background: purple;
+}
+ul li:first-child{
+	background: lightblue;
+} 
+ul li:last-child{
+	background: black;
+} 
+ul li:nth-child(2n){
+	background: red;
+} 
+ul li:not(.diferente){
+	background: gold;
+}
